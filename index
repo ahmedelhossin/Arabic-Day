@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اليوم العالمي للغة العربية</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px; 
+            border: none;
+            background: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);}
+        .scroll-to-top img {
+            width: 50px;
+            height: 50px; 
+            transition: transform 0.3s;
+        }
+        body {
+            font-family: 'Cairo', sans-serif; /* خط عربي مميز */
+            direction: rtl;
+            background-color: #f0f0f0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+
+        header {
+            background-color: #2e3b4e;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            max-width: 1000px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #1abc9c;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #16a085;
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            transform: translateY(2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2e3b4e;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 1rem;
+        }
+
+
+        .section-container {
+            margin-top: 80px;
+        }
+
+        .map, .events {
+            background-color: #ecf0f1;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        .map h3, .events h3 {
+            font-size: 1.5rem;
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+
+        .events ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .events ul li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .interactive {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-top: 20px;
+        }
+
+        .interactive button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .interactive button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <!-- إضافة خط عربي مميز -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="scroll-to-top" onclick="scrollToTop()"><img src="up.png" ></button>
+    <header>
+        <div class="logo">
+            <h1>اليوم العالمي للغة العربية</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#learn">تعرف على اللغة العربية</a></li>
+                <li><a href="#celebrations">الاحتفالات في العالم</a></li>
+                <li><a href="#importance">أهمية اللغة العربية</a></li>
+                <li><a href="#history">تاريخ اللغة العربية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section  class="section-container">
+        <h2>اليوم العالمي للغةالعربيه</h2>
+        <p>اليوم العلمي للغة العربية يُحتفل به في 18 ديسمبر من كل عام، وذلك بمناسبة اعتماد "اليوم العالمي للغة العربية" من قبل الأمم المتحدة في عام 2012. الهدف من هذا اليوم هو تعزيز الوعي بأهمية اللغة العربية في التواصل الثقافي والتعليم، بالإضافة إلى الحفاظ على تراثها ودعمها في مختلف المجالات.</p>
+    </section>
+
+    <section id="learn" class="section-container">
+        <h2>مقدمة عن اللغه العربيه</h2>
+        <p>اللغة العربية هي إحدى اللغات السامية التي تتمتع بتاريخ طويل وعريق، وتعد من أهم اللغات في العالم. يتحدث بها أكثر من 400 مليون شخص في مختلف أنحاء العالم، وهي اللغة الرسمية في 22 دولة من دول الوطن العربي. تتميز اللغة العربية بثرائها اللغوي والتنوع في اللهجات، فضلاً عن أنها لغة القرآن الكريم، مما يجعلها ذات أهمية دينية وثقافية كبيرة.</p>
+        <div id="show-more" style="display:none;">
+            <p>اللغة العربية ليست مجرد وسيلة للتواصل، بل هي جزء أساسي من الهوية الثقافية للعالم العربي والإسلامي. تمتاز اللغة العربية بجمالها وثرائها اللغوي، فهي تحتوي على العديد من الأساليب البلاغية التي تتيح للمستخدمين التعبير عن أنفسهم بطريقة دقيقة ومعبرة. هذه اللغة ليست ثابتة، بل هي لغة حية تتطور وتتكيف مع متغيرات العصر، مما يجعلها قادرة على مواكبة التقدم العلمي والتكنولوجي.
+
+                من أبرز سمات اللغة العربية أنها تتميز بتنوع كبير في اللهجات التي تختلف من منطقة إلى أخرى، ومع ذلك، فإن الفصحى هي اللغة المشتركة التي يتفاهم بها الجميع في معظم الأوساط الرسمية والإعلامية. كما أن العربية هي لغة الأدب والشعر، فقد أبدع العديد من الشعراء والأدباء في صياغة أعمالهم الأدبية بلغة عربية فصيحة.
+                
+                أما في مجال العلوم، فقد لعبت اللغة العربية دورًا مهمًا في الحفاظ على التراث العلمي من خلال ترجمته من اليونانية والفارسية والهندية إلى العربية، مما ساهم في تقدم المعرفة في العصور الوسطى. كما أن العديد من المفردات العلمية والفلسفية تم اقتباسها من العربية إلى اللغات الأوروبية.
+                
+                تتمثل أهمية اللغة العربية أيضًا في كونها لغة القرآن الكريم، الكتاب المقدس في الإسلام، الذي يعد أحد أهم الكتب الدينية في العالم. هذا يعزز من مكانتها الروحية والثقافية بين ملايين المسلمين في مختلف أنحاء العالم.
+                
+                على الرغم من التحديات التي تواجهها اللغة العربية في عصر العولمة واللغات الأجنبية، إلا أنها تظل رمزًا للفخر والاعتزاز لأبناء العالم العربي، وتستمر في التأثير على الثقافات الأخرى من خلال الأدب، والفن، والتعليم، والإعلام.</p>
+        </div>
+        <button class="btn" onclick="toggleDetails('show-more')">عرض التفاصيل</button>
+
+    </section>
+
+
+
+    <section id="celebrations" class="section-container">
+        <h2 style="font-size: 2rem; color: #2c3e50; text-align: center; margin-bottom: 20px;">الاحتفالات حول العالم</h2>
+        <p style="font-size: 1.2rem; color: #7f8c8d; text-align: center; margin-bottom: 30px;">يحتفل العديد من الدول في اليوم العالمي للغة العربية من خلال فعاليات ثقافية وتعليمية. انضموا إلينا لتعرفوا المزيد!</p>
+        
+        
+        <div class="events" style="background-color: #ecf0f1; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h3 style="font-size: 1.5rem; color: #34495e; margin-bottom: 20px;">فعاليات اليوم</h3>
+            <ul style="list-style-type: none; padding-left: 0; font-size: 1.1rem; color: #2c3e50;">
+                <li style="margin: 15px 0;">ورشة عمل في القاهرة: "تعلم كيف تكتب بالعربية"</li>
+                <li style="margin: 15px 0;">مؤتمر في بيروت: "اللغة العربية في العصر الحديث"</li>
+                <li style="margin: 15px 0;">معرض في دبي: "الفن العربي عبر العصور"</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="history" class="section-container">
+        <h2>اهميه الغه العربيه</h2>
+        <p>اللغة العربية تعتبر من أهم اللغات في العالم بفضل دورها الثقافي والديني والاجتماعي. فهي لغة القرآن الكريم، الكتاب المقدس في الإسلام، مما يجعلها ذات أهمية دينية خاصة لأكثر من مليار مسلم حول العالم، حيث تُستخدم في الصلاة والعبادات اليومية. بالإضافة إلى ذلك، تعد اللغة العربية جزءًا أساسيًا من الهوية الثقافية للعالم العربي والإسلامي، وتحمل تراثًا أدبيًا وعلميًا غنيًا يمتد لآلاف السنين، بما في ذلك الشعر العربي القديم والفلسفة والعلم الذي ساهم في نقل المعرفة إلى أوروبا خلال العصور الوسطى.</p>
+        <div id="show-more3" style="display:none;">
+            <p>اللغة العربية تُستخدم في 22 دولة من دول العالم العربي وتُعد لغة رسمية في العديد من الدول، ويتحدث بها أكثر من 400 مليون شخص. كما أنها تُعتبر لغة رسمية في الأمم المتحدة، مما يعزز من مكانتها في الساحة الدولية. تساهم العربية أيضًا في مجالات الإعلام والتعليم، حيث تُستخدم في الصحف والمجلات، وفي وسائل الإعلام المختلفة، وكذلك في التعليم الجامعي والمدرسي، مما يسهم في تعزيز الثقافة والوعي بين الأجيال الجديدة.
+
+                مع تطور العصر الرقمي، أصبحت اللغة العربية أكثر أهمية في مجالات مثل التكنولوجيا والأعمال، حيث يسعى الكثير من الأشخاص حول العالم لتعلم اللغة العربية للتفاعل مع الدول العربية وزيادة فرص التعاون التجاري. وبذلك تظل اللغة العربية واحدة من اللغات الأكثر تأثيرًا في العالم على الصعيدين الثقافي والاقتصادي.</p>
+        </div>
+        <button class="btn" onclick="toggleDetails('show-more3')">عرض التفاصيل</button>
+    </section>
+    <section id="importance" class="section-container">
+        <h2>تاريخ اللغه العربيه</h2>
+        <p>اللغة العربية هي إحدى أقدم اللغات السامية التي نشأت في شبه الجزيرة العربية منذ آلاف السنين. في بداياتها، كانت هناك لهجات متعددة في مناطق مختلفة من الجزيرة، لكن مع ظهور الإسلام في القرن السابع الميلادي، أصبحت اللغة العربية لغة القرآن الكريم، مما جعلها اللغة الدينية والثقافية الأساسية للمسلمين في جميع أنحاء العالم. في العصور الإسلامية الذهبية، وخاصة في العصر العباسي، شهدت اللغة العربية ازدهارًا كبيرًا في الأدب والعلم والفلسفة، حيث تمت ترجمة العديد من الأعمال العلمية والفلسفية إلى العربية، وأصبحت اللغة العربية لغة العلم في العالم الإسلامي.</p>
+        <div id="show-more2" style="display:none;">
+            <p>ومع توسع الإمبراطورية الإسلامية، انتشرت اللغة العربية في مناطق واسعة من الأندلس (إسبانيا الحالية)، وشمال إفريقيا، وآسيا الوسطى، وأجزاء من الهند. رغم التأثيرات اللغوية التي نشأت بسبب الاستعمار الأوروبي في القرن التاسع عشر والعشرين، حافظت اللغة العربية على مكانتها كهوية ثقافية ودينية، وظلت اللغة الفصحى مستخدمة في مجالات الأدب والصحافة والإعلام.
+
+                اليوم، تُعتبر اللغة العربية لغة رسمية في 22 دولة من دول العالم العربي، وهي واحدة من اللغات الرسمية الست في الأمم المتحدة. رغم تنوع اللهجات العربية في مختلف البلدان، لا يزال الفصحى تُستخدم في الإعلام والتعليم والكتابة الرسمية. ومع تطور العصر الرقمي، تواصل اللغة العربية التأثير في العالم، وتظل جزءًا أساسيًا من هوية وثقافة ملايين الناس في مختلف أنحاء العالم.</p>
+        </div>
+        <button class="btn" onclick="toggleDetails('show-more2')">عرض التفاصيل</button>
+
+    </section>
+
+
+    <script>
+    function toggleDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+
+    }
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+    </script>
+</body>
+</html>
